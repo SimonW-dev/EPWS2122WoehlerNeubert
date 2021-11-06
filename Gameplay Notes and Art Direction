@@ -1,5 +1,5 @@
 Gameplay work in progress:
-Wir sehen ein Abenteur spiel mit einem Rythem based Kampf System vor (genau Implimierung noch unklar).
+Wir sehen ein Abenteur spiel mit einem turn based Kampf system mit timing bassierten mini-Spiel. 
 Wir beasichtigen auch einige Platformer Phasen im Spiel zu integrieren.
 
 Wir benutzen hierfür die Unity Engine.
