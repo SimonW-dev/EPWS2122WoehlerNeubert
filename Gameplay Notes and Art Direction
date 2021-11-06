@@ -1,10 +1,10 @@
 Gameplay work in progress:
-Wir sehen ein Abenteur spiel mit einem turn based Kampf system mit timing bassierten mini-Spiel. 
-Wir beasichtigen auch einige Platformer Phasen im Spiel zu integrieren.
+Wir sehen ein Abenteuer Spiel mit einem turn based Kampfsystem mit timing basiertem mini-Spiel. 
+Wir beabsichtigen auch einige platformer Phasen im Spiel zu integrieren.
 
-Wir benutzen hierfür die Unity Engine.
+Wir benutzen die Unity Engine.
 
 Art Direction: 
-Wir haben uns auf ein Pixel Artstyle geeinigt, welcher die Programierung erleichtern wird. 
-Hinzu kommen illustrierte Character Sprites wellche werend dialog Scenen zu sehen seien werden. 
-Es werden mehre Frei placeholder assets benutzt, um Zeit zu sparen. 
+Wir haben uns auf einen Pixel Artstyle geeinigt, welcher die Programmierung erleichtern wird und es uns erlaubt, eigene Designs zu erstellen. 
+Hinzu kommen illustrierte Character Sprites welche während Dialogszenen zu sehen seien werden. 
+Um Zeit zu sparen werden für weniger wichtige Objekte, frei verwendbare Assets aus dem Internet benutzt. 
