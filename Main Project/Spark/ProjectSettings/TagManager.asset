@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
@@ -44,7 +44,7 @@ TagManager:
   - name: Backround
     uniqueID: 2847967595
     locked: 0
-  - name: Foreground
+  - name: Stage
     uniqueID: 1269852999
     locked: 0
   - name: Detail
@@ -52,4 +52,7 @@ TagManager:
     locked: 0
   - name: 'Entity '
     uniqueID: 206058391
+    locked: 0
+  - name: extra Detail
+    uniqueID: 3215195543
     locked: 0

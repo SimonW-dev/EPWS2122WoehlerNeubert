@@ -6,46 +6,84 @@ public class PlayerController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
+    private Collider2D coll;
+    [SerializeField] private LayerMask ground;
+    private enum State {idle, running, jumping, falling}
+    private State state = State.idle;
 
     private void Start()
     {
         //init
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        coll = GetComponent<Collider2D>();
     }
 
 
     // Update is called once per frame
     private void Update()
     {
+
+
+        //get Horizontal movement (via unity Input)
+        float hDireciton = Input.GetAxis("Horizontal");
+
         //run left
-        if (Input.GetKey(KeyCode.A))
+        if (hDireciton < 0)
         {
             rb.velocity = new Vector2(-5, rb.velocity.y);
             transform.localScale = new Vector2(-1, 1);
-            anim.SetBool("running", true);
         }
 
         //run right
-        else if (Input.GetKey(KeyCode.D))
+        else if (hDireciton > 0)
         {
             rb.velocity = new Vector2(5, rb.velocity.y);
             transform.localScale = new Vector2(1, 1);
-            anim.SetBool("running", true);
         }
 
+        //Jump
+        if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers())
+        {
+            rb.velocity = new Vector2(rb.velocity.x, 10f);
+            state = State.jumping;
+        }
+
+        //tell the Animator in what state the player is
+        VelocityState();
+        anim.SetInteger("state", (int)state);
+
+    }
+
+    private void VelocityState()
+    {
+
+        //Jumping
+        if(state == State.jumping)
+        {
+            if(rb.velocity.y < .1f)
+            {
+                state = State.falling;
+            }
+        }
+        else if(state == State.falling)
+        {
+            if (coll.IsTouchingLayers(ground))
+            {
+                state = State.idle;
+            }
+        }
+
+        //Moving
+        else if(Mathf.Abs(rb.velocity.x) > 2f)
+        {
+            state = State.running;
+        }
+        
         //Idle
         else
         {
-            anim.SetBool("running", false);
+            state = State.idle;
         }
-
-
-        //Jump
-        if (Input.GetKey(KeyCode.Space))
-        {
-            rb.velocity = new Vector2(rb.velocity.x, 10f);
-        }
-
     }
 }
