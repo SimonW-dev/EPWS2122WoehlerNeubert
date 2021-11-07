@@ -81399,7 +81399,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &1296333992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -81441,6 +81441,8 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 64
+  speed: 8
+  jumpForce: 10
 --- !u!95 &1296333994
 Animator:
   serializedVersion: 3

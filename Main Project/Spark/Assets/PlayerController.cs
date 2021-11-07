@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+    //Start() variables (for initializing)
     private Rigidbody2D rb;
     private Animator anim;
     private Collider2D coll;
-    [SerializeField] private LayerMask ground;
-    private enum State {idle, running, jumping, falling}
+
+    //Finite State Machine
+    private enum State { idle, running, jumping, falling }
     private State state = State.idle;
+
+    //Inspector variables
+    [SerializeField] private LayerMask ground;
+    [SerializeField] private float speed = 8;
+    [SerializeField] private float jumpForce = 10;
 
     private void Start()
     {
@@ -23,36 +31,39 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        Movement();
 
+        //tell the Animator in what state the player is
+        VelocityState();
+        anim.SetInteger("state", (int)state);
 
+    }
+
+    private void Movement()
+    {
         //get Horizontal movement (via unity Input)
         float hDireciton = Input.GetAxis("Horizontal");
 
         //run left
         if (hDireciton < 0)
         {
-            rb.velocity = new Vector2(-5, rb.velocity.y);
+            rb.velocity = new Vector2(-speed, rb.velocity.y);
             transform.localScale = new Vector2(-1, 1);
         }
 
         //run right
         else if (hDireciton > 0)
         {
-            rb.velocity = new Vector2(5, rb.velocity.y);
+            rb.velocity = new Vector2(speed, rb.velocity.y);
             transform.localScale = new Vector2(1, 1);
         }
 
-        //Jump
-        if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers())
+        //Jump + check if touching ground layer
+        if (Input.GetButtonDown("Jump") && coll.IsTouchingLayers(ground))
         {
-            rb.velocity = new Vector2(rb.velocity.x, 10f);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             state = State.jumping;
         }
-
-        //tell the Animator in what state the player is
-        VelocityState();
-        anim.SetInteger("state", (int)state);
-
     }
 
     private void VelocityState()
