@@ -1,4 +1,4 @@
-# Entwicklungsprojekt
+# Exposé
 
 ## Projekt Idee:
 Im Rahmen unseres Entwicklungs Projektes möchten wir zur Aufklärung und
