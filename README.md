@@ -1,12 +1,12 @@
-## Entwicklungsprojekt
+# Entwicklungsprojekt
 
-# Projekt Idee:
+## Projekt Idee:
 Im Rahmen unseres Entwicklungs Projektes möchten wir zur Aufklärung und
 Kenntnisnahme von Depressionen beitragen. Hierfür wollen wir ein Spiel entwickeln,
 Welches sich mit diesem Themenbereich beschäftigt. Unser Fokus hier ist es gegen die
 Misinformation, dass man einen Grund für Depressionen braucht auf zu klären.
 
-# Kernproblem
+## Kernproblem
 Depression ist ein Thema mit immer zunehmender Wichtigkeit in unserer Gesellschaft,
 welches jedoch seit Jahrzehnten durch Vorurteile, Stigma und Ignoranz geprägt ist.
 In den letzten Jahren wurden viele Bemühungen zur Aufklärung getätigt, wobei sich
@@ -17,7 +17,7 @@ Jedoch sind Depressionen vielfältig und können viele verschieden Ursachen habe
 uns aufgefallen ist, dass die meisten Medien Depressionen als Folge von Trauma
 behandeln.
 
-# Lösungsansatz
+## Lösungsansatz
 Wir möchten über Depressionen im Kontext von Gesundheitlichen Gründen aufklären, mit
 dem Hauptfokus darauf, dass man keinen Bestimmten Grund für eine Depression braucht
 und leute die unter dieser Art von Depression leiden auch ein Recht auf Hilfe haben.
@@ -38,7 +38,7 @@ Unser derzeitiger Plan ist ein Rhythm Game mit RPG Elements zu erstellen, inspir
 hit Spiel UnderTale, dieser Ansatz könnte sich aber im Verlauf des Projektes noch
 verändern.
 
-# Quellen
+## Quellen
 https://www.aok-bv.de/imperia/md/aokbv/presse/pressemitteilungen/archiv/2018/07_faktenblatt_depressionen.pdf
 
 https://www.neurologen-und-psychiater-im-netz.org/psychiatrie-psychosomatik-psychotherapie/stoerungen-erkrankungen/depressionen/ursachen/#:~:text=Denn%20Depressionen%20treten%20familiär%20gehäuft,epression%20erkranken%20auf%20mindestens%2050%25.
