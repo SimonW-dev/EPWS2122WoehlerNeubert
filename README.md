@@ -46,3 +46,5 @@ https://www.neurologen-und-psychiater-im-netz.org/psychiatrie-psychosomatik-psyc
 https://www.businessinsider.de/karriere/psychische-erkrankungen-etwa-ein-drittel-aller-berufstaetigen-ist-betroffen-a/
 
 https://www.neurologen-und-psychiater-im-netz.org/psychiatrie-psychosomatik-psychotherapie/news-archiv/meldungen/article/studie-psychische-stoerungen-bleiben-gefaehrlich-oft-unbehandelt/
+
+https://www.news4teachers.de/2019/11/kassenstudie-ein-viertel-aller-schueler-zeigt-psychische-auffaelligkeiten-unter-depressionen-leiden-im-schnitt-zwei-kinder-pro-klasse/
