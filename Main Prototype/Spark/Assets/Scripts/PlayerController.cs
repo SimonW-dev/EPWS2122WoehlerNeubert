@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Collider2D coll;
+    //private Collider2D collBox;
 
     //Finite State Machine
     private enum State { idle, running, jumping, falling }
@@ -19,8 +20,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask ground;
     [SerializeField] private float speed = 8;
     [SerializeField] private float jumpForce = 10;
-    [SerializeField] private int cherries = 0;
-    [SerializeField] private Text cherryText;
+    [SerializeField] private int collectables = 0;
+    [SerializeField] private Text collText;
 
     private void Start()
     {
@@ -28,6 +29,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         coll = GetComponent<Collider2D>();
+        //collBox = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -41,13 +43,14 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    //what happens when you touch a collectible
     private void OnTriggerEnter2D(Collider2D collision)
     {
        if (collision.tag == "Collectable")
        {
             Destroy(collision.gameObject);
-            cherries += 1;
-            cherryText.text = cherries.ToString();
+            collectables += 1;
+            collText.text = collText.ToString();
        }
     }
 
@@ -76,9 +79,13 @@ public class PlayerController : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             state = State.jumping;
         }
+
+        //TODO if no input is given put velocity to 0
+        //so that the character doesnt slide like hes on ice
+
     }
 
-
+    //check if the character is moving, jumping/falling or idle
     private void VelocityState()
     {
 

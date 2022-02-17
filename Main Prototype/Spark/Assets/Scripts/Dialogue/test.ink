@@ -4,7 +4,8 @@ Hello Player
  == My_Choices ==
  How's it going?
  Are you feeling good?
- placeholder while answering HAHAHAXD
+ #X as a placeholder while optionPanel is up
+ X
  + [Yes] -> Good
  + [No] -> Bad
  + [What] -> Repeat
@@ -20,4 +21,3 @@ Hello Player
  == Repeat ==
  Alright fine, let me repeat
  -> My_Choices
- 

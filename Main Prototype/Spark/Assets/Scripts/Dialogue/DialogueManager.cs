@@ -19,8 +19,6 @@ public class DialogueManager: MonoBehaviour
     //for later implementation, so that you can put #tags in inky to set text color and so on.
     //List<string> tags;
 
-
-
     private void Start()    //calls before first frame
     {
         //init
@@ -67,7 +65,6 @@ public class DialogueManager: MonoBehaviour
     }
 
     //Type out the sentence letter by letter
-    //This is only to make it look good
     IEnumerator TypeSentence(string sentence)
     {
         message.text = "";
@@ -80,7 +77,6 @@ public class DialogueManager: MonoBehaviour
     }
 
     //Create then show the choices on the screen until one got selected
-    //This is only temporary because its way too complicated
     IEnumerator ShowChoices()
     {
         Debug.Log("There are choices need to be made here!");
@@ -119,5 +115,13 @@ public class DialogueManager: MonoBehaviour
         }
         choice = null; //Forgot to reset the choice. Otherwise, it would select an option without player intervention.
         AdvanceDialogue();
+    }
+
+    void parseTags() 
+    {
+        //check inkAsset for #tags
+        //parse for #textcolor, #name, #namecolor etc.
+        //using a switch
+
     }
 }
