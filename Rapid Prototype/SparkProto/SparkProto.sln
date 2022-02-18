@@ -5,9 +5,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ink-Libraries", "Ink-Librar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{e2334449-1c0f-956f-eaba-5bee61edf82d}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{f2e49f2b-d76f-4106-1374-60638199c932}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InkEditor", "InkEditor.csproj", "{c23752f1-f777-648f-ef09-f7a0c5798e97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{a30440bb-b10e-f257-7432-cccf6917b3bf}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor-firstpass", "Assembly-CSharp-Editor-firstpass.csproj", "{e25934da-4782-0ccc-2e41-6936c74c99cf}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,10 +20,12 @@ Global
 		{8f9ca7b7-fc36-2e8e-49a6-b2d720087e71}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e2334449-1c0f-956f-eaba-5bee61edf82d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{e2334449-1c0f-956f-eaba-5bee61edf82d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f2e49f2b-d76f-4106-1374-60638199c932}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f2e49f2b-d76f-4106-1374-60638199c932}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{c23752f1-f777-648f-ef09-f7a0c5798e97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{c23752f1-f777-648f-ef09-f7a0c5798e97}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{a30440bb-b10e-f257-7432-cccf6917b3bf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{a30440bb-b10e-f257-7432-cccf6917b3bf}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{e25934da-4782-0ccc-2e41-6936c74c99cf}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{e25934da-4782-0ccc-2e41-6936c74c99cf}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
