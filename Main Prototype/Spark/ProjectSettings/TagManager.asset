@@ -3,9 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Collectable
-  - DialogueStarter
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -13,11 +11,11 @@ TagManager:
   - 
   - Water
   - UI
-  - Ground
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Obstacle
+  - Aesthetic
+  - Enemy
+  - Death
   - 
   - 
   - 
@@ -44,17 +42,17 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Backround
-    uniqueID: 2847967595
+    uniqueID: 3765958261
+    locked: 0
+  - name: Middleground
+    uniqueID: 841826523
+    locked: 0
+  - name: Entity
+    uniqueID: 1458565641
     locked: 0
   - name: Stage
-    uniqueID: 1269852999
+    uniqueID: 942441123
     locked: 0
   - name: Detail
-    uniqueID: 3033293773
-    locked: 0
-  - name: 'Entity '
-    uniqueID: 206058391
-    locked: 0
-  - name: extra Detail
-    uniqueID: 3215195543
+    uniqueID: 800646011
     locked: 0
